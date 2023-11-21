@@ -14,5 +14,11 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "./src/assets"),
     },
   },
-  plugins: [react(), svgr()],
+  plugins: [
+    react(),
+    svgr({
+      icon: "25px",
+      expandProps: "end",
+    }),
+  ],
 });

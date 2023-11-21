@@ -4,6 +4,11 @@
 
   --dimmed-secondary: hsl(35, 66%, 94%);
   --text-primary: hsl(30, 38%, 30%);
+
+  --chatbox-color: hsl(32, 30%, 83%);
+  --chatbox-sender-color: hsl(254, 28%, 62%);
+  --chatbox-receiver-color: hsl(0, 0%, 100%);
+
   --font-primary: "Poppins", sans-serif;
 }
 

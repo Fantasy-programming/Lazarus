@@ -1,0 +1,30 @@
+:root {
+  --chat-width: 350px;
+}
+
+.wrapper {
+  background: var(--primary-color);
+
+  height: 100%;
+  width: var(--chat-width);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.header {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

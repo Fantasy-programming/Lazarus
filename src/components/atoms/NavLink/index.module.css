@@ -1,0 +1,22 @@
+@value layout: '@modules/layout.module.css';
+@value navbar-width from layout;
+
+.navlink {
+  background: var(--dimmed-secondary);
+  font-size: 1.5rem;
+  border-radius: 50%;
+
+  width: calc(navbar-width - 10px);
+  height: calc(navbar-width - 10px);
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  cursor: pointer;
+}
+
+.navlink a {
+  height: calc((navbar-width - 10px) / 2);
+  width: calc((navbar-width - 10px) / 2);
+}

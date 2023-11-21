@@ -1,0 +1,9 @@
+@value layout: '@modules/layout.module.css';
+@value chat-width, navbar-width from layout;
+
+/* 30 px is the navbar padding */
+
+.wrapper {
+  margin-left: calc(navbar-width + 30px);
+  margin-right: chat-width;
+}

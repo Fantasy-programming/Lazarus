@@ -1,12 +1,12 @@
 import Search from "@components/molecules/Search";
-import PageWrapper from "@components/templates/PageWrapper";
+import PageTemplate from "@components/templates/PageTemplate";
 
 function HomePage() {
   return (
     <>
-      <PageWrapper>
+      <PageTemplate>
         <Search />
-      </PageWrapper>
+      </PageTemplate>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import SearchBox from "@components/atoms/SearchBox";
-import SearchBtn from "@components/atoms/SearchBtn";
+import Button from "@components/atoms/Button";
 import CartBtn from "@components/atoms/CartBtn";
 
 import Style from "./index.module.css";
@@ -8,7 +8,7 @@ function Search() {
   return (
     <div className={Style.search}>
       <SearchBox />
-      <SearchBtn />
+      <Button />
       <CartBtn />
     </div>
   );

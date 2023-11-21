@@ -3,7 +3,7 @@
   --secondary-color: hsl(26, 54%, 97%);
 
   --dimmed-secondary: hsl(35, 66%, 94%);
-  --text-primary: hsl(30, 38%, 30%);
+  --text-color-primary: hsl(30, 38%, 30%);
 
   --chatbox-color: hsl(32, 30%, 83%);
   --chatbox-sender-color: hsl(254, 28%, 62%);
@@ -15,7 +15,8 @@
 body {
   background: var(--secondary-color);
   font-family: var(--font-primary);
-  color: var(--text-primary);
+  color: var(--text-color-primary);
+  line-height: 1.5rem;
 }
 
 ul {

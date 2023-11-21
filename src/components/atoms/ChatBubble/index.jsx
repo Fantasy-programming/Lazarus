@@ -2,17 +2,18 @@ import Style from "./index.module.css";
 
 //TODO: Refactor this to make it better (Add book recon component)
 
-function ChatBubble({ person }) {
+function ChatBubble({ person, message }) {
   const orientation = person === "left";
+  if (!message) return <></>;
   return (
     <div className={Style.bubble}>
       {orientation ? (
         <div className={Style["bubble-right"]}>
-          <span>This is a test Chat message</span>
+          <span> {message} </span>
         </div>
       ) : (
         <div className={Style["bubble-left"]}>
-          <span>This is a test Chat message</span>
+          <span>{message}</span>
         </div>
       )}
     </div>

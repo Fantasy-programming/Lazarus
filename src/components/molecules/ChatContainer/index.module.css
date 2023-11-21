@@ -1,6 +1,9 @@
 .container {
   margin: 10px;
   height: 100%;
+
+  /* fix the overflow bug */
+  min-height: 0px;
   border-radius: 10px;
   background: var(--chatbox-color);
   opacity: 1;
@@ -61,10 +64,11 @@
 .chat {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
   height: calc(100% - 160px);
-  overflow-y: scroll;
+  width: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
 }
 
 .chatbar {

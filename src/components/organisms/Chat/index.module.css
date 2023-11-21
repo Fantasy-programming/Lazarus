@@ -1,12 +1,11 @@
-:root {
-  --chat-width: 350px;
-}
+@value layout: '@modules/layout.module.css';
+@value chat-width from layout;
 
 .wrapper {
   background: var(--primary-color);
 
   height: 100%;
-  width: var(--chat-width);
+  width: chat-width;
 
   display: flex;
   flex-direction: column;

@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "978-3-16-148410-0",
+      "bookName": "The Book Thief",
+      "author": "Markus Zusak",
+      "rating": 4.5,
+      "genre": "Historical Fiction",
+      "date": "2005-03-14",
+      "cover": "https://example.com/book_thief_cover.jpg",
+      "numRead": 12000
+    },
+    {
+      "id": "978-0-452-28423-4",
+      "bookName": "1984",
+      "author": "George Orwell",
+      "rating": 4.8,
+      "genre": "Dystopian Fiction",
+      "date": "1949-06-08",
+      "cover": "https://example.com/1984_cover.jpg",
+      "numRead": 25000
+    },
+    {
+      "id": "978-0-575-08125-1",
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "rating": 4.7,
+      "genre": "Fantasy",
+      "date": "1937-09-21",
+      "cover": "https://example.com/hobbit_cover.jpg",
+      "numRead": 18000
+    },
+    {
+      "id": "978-0-545-01022-6",
+      "bookName": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "rating": 4.3,
+      "genre": "Young Adult",
+      "date": "2008-09-14",
+      "cover": "https://example.com/hunger_games_cover.jpg",
+      "numRead": 30000
+    },
+    {
+      "id": "978-0-385-73348-1",
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "rating": 4.6,
+      "genre": "Classics",
+      "date": "1960-07-11",
+      "cover": "https://example.com/to_kill_mockingbird_cover.jpg",
+      "numRead": 22000
+    },
+    {
+      "id": "978-0-7475-3269-6",
+      "bookName": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "rating": 4.9,
+      "genre": "Fantasy",
+      "date": "1997-06-26",
+      "cover": "https://example.com/harry_potter_cover.jpg",
+      "numRead": 45000
+    },
+    {
+      "id": "978-0-316-52938-4",
+      "bookName": "The Alchemist",
+      "author": "Paulo Coelho",
+      "rating": 4.4,
+      "genre": "Fiction",
+      "date": "1988-01-01",
+      "cover": "https://example.com/alchemist_cover.jpg",
+      "numRead": 28000
+    },
+    {
+      "id": "978-0-312-42757-3",
+      "bookName": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "rating": 4.2,
+      "genre": "Mystery",
+      "date": "2003-03-18",
+      "cover": "https://example.com/da_vinci_code_cover.jpg",
+      "numRead": 32000
+    }
+  ]
+}

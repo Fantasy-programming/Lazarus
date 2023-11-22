@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import ChatInput from "@components/atoms/ChatInput";
@@ -9,13 +9,13 @@ import Style from "./index.module.css";
 import Spacing from "@modules/utility.module.css";
 
 function ChatContainer() {
-  const [chat, setChat] = useState([]);
-  const [message, setMessage] = useState("");
+  const [chat, setChat] = useState<string[]>([]);
+  const [message, setMessage] = useState<string>("");
   const [parent] = useAutoAnimate({
     duration: 150,
     easing: "ease-in-out",
   });
-  const sendMessage = (e) => {
+  const sendMessage = (e: React.FormEvent) => {
     e.preventDefault();
     setChat([...chat, message]);
     setMessage("");
@@ -34,7 +34,7 @@ function ChatContainer() {
         <ChatBubble person="left" />
         <ChatBubble person="right" />
         <ChatBubble person="left" />
-        {chat.map((message, index) => (
+        {chat.map((message: string, index) => (
           <ChatBubble key={index} person="left" message={message} />
         ))}
       </div>

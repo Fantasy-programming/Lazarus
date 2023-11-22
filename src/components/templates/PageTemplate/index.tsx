@@ -2,7 +2,11 @@ import MainTemplate from "@components/templates/MainTemplate";
 import Navbar from "@components/organisms/Navbar";
 import Chat from "@components/organisms/Chat";
 
-function PageTemplate({ children }) {
+type PageType = {
+  children: React.ReactNode;
+};
+
+const PageTemplate = ({ children }: PageType) => {
   return (
     <>
       <Navbar />
@@ -10,6 +14,6 @@ function PageTemplate({ children }) {
       <Chat />
     </>
   );
-}
+};
 
 export default PageTemplate;

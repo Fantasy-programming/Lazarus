@@ -1,6 +1,7 @@
 import ChatBtn from "@components/atoms/ChatBtn";
-import Style from "./index.module.css";
 import ChatContainer from "@components/molecules/ChatContainer";
+
+import Style from "./index.module.css";
 
 // TODO: Add state to the chat button + elements
 

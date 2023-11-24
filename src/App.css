@@ -1,8 +1,8 @@
 :root {
   --primary-color: hsl(30, 38%, 90%);
   --secondary-color: hsl(26, 54%, 97%);
+  --tertiary-color: hsl(35, 66%, 94%);
 
-  --dimmed-secondary: hsl(35, 66%, 94%);
   --text-color-primary: hsl(30, 38%, 30%);
 
   --chatbox-color: hsl(32, 30%, 83%);

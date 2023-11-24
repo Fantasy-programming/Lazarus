@@ -16,6 +16,7 @@
 .container input {
   border: none;
   background: var(--primary-color);
+  width: 100%;
 }
 
 .container input:focus-visible {

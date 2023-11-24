@@ -2,7 +2,7 @@
 @value navbar-width from layout;
 
 .navlink {
-  background: var(--dimmed-secondary);
+  background: var(--tertiary-color);
   font-size: 1.5rem;
   border-radius: 50%;
 

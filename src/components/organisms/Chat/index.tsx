@@ -1,4 +1,4 @@
-import ChatBtn from "@components/atoms/ChatBtn";
+import { RoundBtn } from "@components/atoms/Button";
 import ChatContainer from "@components/molecules/ChatContainer";
 
 import Style from "./index.module.css";
@@ -10,7 +10,7 @@ function Chat() {
     <div className={Style.wrapper}>
       <div className={Style.header}>
         <span className={Style.title}>Chat</span>
-        <ChatBtn icon="squares" color="secondary" />
+        <RoundBtn icon="squares" color="secondary" />
       </div>
       <ChatContainer />
     </div>

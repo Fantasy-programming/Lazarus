@@ -1,4 +1,6 @@
 .search {
   width: auto;
   display: flex;
+  padding: 25px;
+  gap: 20px;
 }

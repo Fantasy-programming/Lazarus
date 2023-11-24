@@ -1,5 +1,5 @@
 import NavLink from "@components/atoms/NavLink";
-import { ReactComponent as BellIcon } from "@assets/bell.svg";
+import BellIcon from "@assets/bell.svg?react";
 
 import Style from "./index.module.css";
 

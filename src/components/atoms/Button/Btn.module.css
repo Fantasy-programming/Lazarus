@@ -1,0 +1,26 @@
+/* Normal Button Stylesheet */
+
+.btn {
+  
+  composes: button from "./index.module.css";
+  font-size: 0.8rem;
+  height: auto;
+  border-radius: 25px;
+
+  padding: 15px;
+
+  min-width: 120px;
+}
+
+.btn-search {
+  composes: btn;
+  color: #fff;
+  background: rgb(112, 78, 238);
+  background: linear-gradient(
+    30deg,
+    rgba(112, 78, 238, 0.8027543781184349) 12%,
+    rgba(131, 233, 31, 0.8) 31%,
+    rgba(183, 213, 12, 0.8) 49%,
+    rgba(222, 78, 66, 0.8) 71%
+  );
+}

@@ -1,5 +1,5 @@
 import Style from "./index.module.css";
-import { ReactComponent as SearchIcon } from "@assets/search.svg";
+import SearchIcon from "@assets/search.svg?react";
 
 type SearchBoxProps = {
   value: string;

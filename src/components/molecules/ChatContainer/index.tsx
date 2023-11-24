@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import ChatInput from "@components/atoms/ChatInput";
-import ChatBtn from "@components/atoms/ChatBtn";
+import { RoundBtn } from "@components/atoms/Button";
 import ChatBubble from "@components/atoms/ChatBubble";
 
 import Style from "./index.module.css";
@@ -39,13 +39,9 @@ function ChatContainer() {
         ))}
       </div>
       <form className={Style.chatbar} onSubmit={sendMessage}>
-        <ChatBtn icon="paperclip" color="secondary" />
-        <ChatInput
-          className={Spacing["m-x-1"]}
-          value={message}
-          action={setMessage}
-        />
-        <ChatBtn icon="plane" color="red-gradient" />
+        <RoundBtn icon="paperclip" color="secondary" />
+        <ChatInput className={Spacing["m-x-1"]} value={message} action={setMessage} />
+        <RoundBtn icon="plane" color="red-gradient" />
       </form>
     </div>
   );

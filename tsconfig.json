@@ -2,6 +2,15 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@modules/*": ["src/modules/*"],
+      "@assets/*": ["src/assets/*"],
+    
+    },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
@@ -17,5 +26,8 @@
     "jsx": "react-jsx"
   },
   "include": ["src"],
+  "files": [
+    "declarations.d.ts"
+],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

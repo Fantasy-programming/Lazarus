@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import svgr from "@svgr/rollup";
+import svgr from "vite-plugin-svgr";
 import path from "path";
 
 // https://vitejs.dev/config/
@@ -17,8 +17,12 @@ export default defineConfig({
   plugins: [
     react(),
     svgr({
-      icon: "25px",
-      expandProps: "end",
+      svgrOptions: {
+        plugins: ["@svgr/plugin-svgo", "@svgr/plugin-jsx"],
+        icon: "25px",
+        expandProps: "end",
+        replaceAttrValues: { "#000000": "hsl(30, 38%, 60%)" },
+      },
     }),
   ],
 });

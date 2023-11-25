@@ -1,4 +1,7 @@
-import tinycolor from "tinycolor2";
+import { useMemo } from "react";
+import { useBookStyles } from "@/hooks/useBookStyles";
+import { useSmallBookStyles } from "@/hooks/useSmallBookStyles";
+
 import Style from "./index.module.css";
 
 interface BookProps {
@@ -10,23 +13,13 @@ interface BookProps {
 
 interface SmallBookProps {
   title: string;
-  color?: string;
-  Icon?: string;
+  color: string;
+  icon: string;
 }
 
 function Book({ color, cover, title, author }: BookProps) {
-  const tColor = tinycolor(color);
-  const darkColor1 = tColor.darken(10).toString(); // Compute the first darker shade
-  const darkColor2 = tColor.darken(15).toString(); // Compute the second darker shade
-
-  const bookstyle = {
-    background: color,
-    backgroundImage: `linear-gradient(to right, ${darkColor1} 13px, ${darkColor2} 15px, transparent 15px)`,
-  };
-
-  const imageCover = {
-    backgroundImage: `url(${cover})`,
-  };
+  const { bookstyle } = useBookStyles(color);
+  const imageCover = useMemo(() => ({ backgroundImage: `url(${cover})` }), [cover]);
 
   return (
     <div>
@@ -36,29 +29,26 @@ function Book({ color, cover, title, author }: BookProps) {
         </div>
       </div>
       <div>
-        <span className={Style.title}>{title}</span>
-        <span className={Style.author}>{author}</span>
+        <span className={Style.title}>{title ?? "Anonymous"}</span>
+        <span className={Style.author}>{author ?? "Unknown"}</span>
       </div>
     </div>
   );
 }
 
-export function SmallBook({ title, color, Icon }: SmallBookProps) {
-  const tColor = tinycolor(color);
-  const darkColor1 = tColor.darken(10).toString(); // Compute the first darker shade
-  const darkColor2 = tColor.darken(15).toString(); // Compute the second darker shade
-
-  const bookstyle = {
-    background: color,
-    backgroundImage: `linear-gradient(to right, ${darkColor1} 8px, ${darkColor2} 10px, transparent 10px)`,
-  };
+export function SmallBook({ title, color, icon }: SmallBookProps) {
+  const { IconComponent, bookstyle } = useSmallBookStyles(color, icon);
 
   return (
-    <div>
+    <div className={Style["small-container"]}>
       <div className={Style["small-wrapper"]}>
-        <div style={bookstyle} className={Style["small-book"]}></div>
+        <div style={bookstyle} className={Style["small-book"]}>
+          <div className={Style["book-icon"]}>
+            <IconComponent fill="hsl(40, 64%, 73%)" />
+          </div>
+        </div>
       </div>
-      {title ?? ""}
+      <span className={Style["small-title"]}>{title}</span>
     </div>
   );
 }

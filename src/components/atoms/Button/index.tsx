@@ -10,7 +10,7 @@ import RBtnStyle from "./RBtn.module.css";
 interface BtnProps {
   text: string;
   onClick: () => void;
-  actions: () => void;
+  actions?: () => void;
 }
 
 interface RoundBtnProps {

@@ -3,7 +3,6 @@ import { Button } from "@components/atoms/Button";
 import { RoundBtn } from "@components/atoms/Button";
 
 import Style from "./index.module.css";
-import Spacing from "@modules/utility.module.css";
 
 function Search() {
   return (

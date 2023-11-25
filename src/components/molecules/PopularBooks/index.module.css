@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 0px 20px;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 0px 40px;
+}
+
+.buttonlist {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewAll {
+  display: block;
+  height: 20px;
+  width: 80px;
+  border-radius: 25px;
+  text-align: center;
+
+  background: var(--primary-color);
+
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+.move {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  text-align: center;
+  outline: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  background: var(--primary-color);
+
+  font-size: 0.8rem;
+  padding: 10px;
+}
